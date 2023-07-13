@@ -1,7 +1,10 @@
 package com.rondroid.mealsimple
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import com.rondroid.mealsimple.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,19 +22,33 @@ class MainActivity : AppCompatActivity() {
             display(Meal("Sunday"))
         }
 
-
-        binding.nextTv.setOnClickListener {
+        val d= binding.nextTv.setOnClickListener {
             numberClicked++
 
-            when(numberClicked % 7){
-                0 -> display(Meal("Sunday"))
-                1 -> display(Meal("Monday"))
-                2 -> display(Meal("Tuesday"))
-                3 -> display(Meal("Wednesday"))
-                4 -> display(Meal("Thursday"))
-                5 -> display(Meal("Friday"))
-                6-> display(Meal("Saturday"))
+            if((binding.breakfastETv.text.isEmpty() || binding.lunchETv.text.isEmpty() || binding.dinnerETv.text.isEmpty())){
+                Toast.makeText(applicationContext,"One or more details is missing!",Toast.LENGTH_LONG).show()
             }
+            else {
+                when(numberClicked % 7){
+                    0 -> display(Meal("Sunday"))
+                    1 -> display(Meal("Monday"))
+                    2 -> display(Meal("Tuesday"))
+                    3 -> display(Meal("Wednesday"))
+                    4 -> display(Meal("Thursday"))
+                    5 -> display(Meal("Friday"))
+                    6-> display(Meal("Saturday"))
+                }
+            }
+        }
+
+        binding.button.setOnClickListener {
+            val intent =  Intent(applicationContext,Complete::class.java)
+
+            if ((binding.breakfastETv.text.isEmpty() || binding.lunchETv.text.isEmpty() || binding.dinnerETv.text.isEmpty())) {
+                Toast.makeText(applicationContext,"Fill in all the details to proceed",Toast.LENGTH_LONG).show()
+            }
+            else
+                startActivity(intent)
         }
     }
 
