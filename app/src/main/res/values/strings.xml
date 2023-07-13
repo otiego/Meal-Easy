@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Meal-Easy</string>
+    <string name="lunch">French Fries/Chicken</string>
+    <string name="breakfasr">Tea/Bread</string>
+    <string name="dinner">Mutton/Rice</string>
+    <string name="breakfast">breakfast</string>
 </resources>

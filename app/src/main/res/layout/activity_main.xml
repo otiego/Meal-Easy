@@ -83,12 +83,13 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/breakfastETv"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/text_editor_background"
                 android:ems="10"
-                android:hint="Tea/Bread"
+                android:hint="@string/breakfast"
                 android:padding="12dp"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -103,12 +104,13 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/lunchETv"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/text_editor_background"
                 android:ems="10"
-                android:hint="French Fries/Chicken"
+                android:hint="@string/lunch"
                 android:padding="12dp"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -123,12 +125,13 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/dinnerETv"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/text_editor_background"
                 android:ems="10"
-                android:hint="Mutton/Rice"
+                android:hint="@string/dinner"
                 android:padding="12dp"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
