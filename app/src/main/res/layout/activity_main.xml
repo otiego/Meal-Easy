@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:text="Wednesday"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView1"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -90,7 +90,7 @@
                 android:ems="10"
                 android:hint="Tea/Bread"
                 android:padding="12dp"
-                android:textColor="@color/editTextColor"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <TextView
@@ -110,7 +110,7 @@
                 android:ems="10"
                 android:hint="French Fries/Chicken"
                 android:padding="12dp"
-                android:textColor="@color/editTextColor"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <TextView
@@ -130,7 +130,7 @@
                 android:ems="10"
                 android:hint="Mutton/Rice"
                 android:padding="12dp"
-                android:textColor="@color/editTextColor"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <LinearLayout
@@ -141,6 +141,7 @@
                 android:padding="10dp">
 
                 <TextView
+                    android:id="@+id/nextTv"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
@@ -150,6 +151,7 @@
                     android:textStyle="bold" />
 
                 <ImageView
+                    android:id="@+id/nextIv"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_marginStart="8dp"
@@ -165,9 +167,9 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
         android:background="@drawable/button_background"
         android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardView1" />
