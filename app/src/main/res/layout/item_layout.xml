@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:backgroundTint="@color/cream"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:id="@+id/linearCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linearDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/itemDayETv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:background="@drawable/day_background"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/itemETv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breakfast"
+            android:textSize="25sp"
+            android:layout_below="@+id/linearDay"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/itemETv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tea/Bread"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/itemETv1"/>
+
+        <EditText
+            android:id="@+id/itemETv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunch"
+            android:textSize="25sp"
+            android:layout_below="@+id/linearDay"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/itemETv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="French Fries/Cheicken"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/itemETv1"/>
+
+
+        <EditText
+            android:id="@+id/itemETv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinner"
+            android:textSize="25sp"
+            android:layout_below="@+id/linearDay"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/itemETv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fish/Ugali"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/itemETv1"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
