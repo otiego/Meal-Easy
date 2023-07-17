@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             display(Meal("Sunday"))
         }
 
-        val d= binding.nextTv.setOnClickListener {
+        binding.nextTv.setOnClickListener {
             numberClicked++
 
             if((binding.breakfastETv.text.isEmpty() || binding.lunchETv.text.isEmpty() || binding.dinnerETv.text.isEmpty())){
@@ -44,7 +44,8 @@ class MainActivity : AppCompatActivity() {
         binding.button.setOnClickListener {
             val intent =  Intent(applicationContext,Complete::class.java)
 
-            if ((binding.breakfastETv.text.isEmpty() || binding.lunchETv.text.isEmpty() || binding.dinnerETv.text.isEmpty())) {
+            if ((binding.dayTv.text!="Saturday" && (binding.breakfastETv.text.isEmpty() && binding.lunchETv.text.isEmpty() && binding.dinnerETv.text.isEmpty()))) {
+                Log.d("Cont","It worked")
                 Toast.makeText(applicationContext,"Fill in all the details to proceed",Toast.LENGTH_LONG).show()
             }
             else
