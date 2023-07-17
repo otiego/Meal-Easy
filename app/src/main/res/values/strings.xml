@@ -4,4 +4,6 @@
     <string name="breakfasr">Tea/Bread</string>
     <string name="dinner">Mutton/Rice</string>
     <string name="breakfast">breakfast</string>
+    <string name="meal_easy">Meal-Easy</string>
+    <string name="edit_your_menu">edit your menu</string>
 </resources>

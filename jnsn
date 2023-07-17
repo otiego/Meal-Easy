@@ -1,0 +1,53 @@
+[33mcommit 78643e53db3d6cb5ffb96837db3498449bf820ff[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Ronnie <ronald.otiego@gmail.com>
+Date:   Fri Jul 14 11:58:57 2023 +0300
+
+    design complete layout for the recyclerView
+
+[33mcommit f7ff22e38d14cfa05f3d1a0c9aba598c4ebb0fbe[m
+Author: Ronnie <ronald.otiego@gmail.com>
+Date:   Fri Jul 14 11:57:49 2023 +0300
+
+    create the item layout for the recyclerView
+
+[33mcommit 5e132dbe3e8d100e063a3e3170c0acd602e56899[m
+Author: Ronnie <ronald.otiego@gmail.com>
+Date:   Fri Jul 14 11:56:26 2023 +0300
+
+    create a new drawable file for day background
+
+[33mcommit 28b424195fc1f836104825e4b5c709e6850d3f6e[m
+Author: Ronnie <ronald.otiego@gmail.com>
+Date:   Fri Jul 14 11:55:14 2023 +0300
+
+    add recycler-view library to build.gradle
+
+[33mcommit a052f3793993b46757b1f35d883ed3076f75325a[m
+Author: Ronnie <ronald.otiego@gmail.com>
+Date:   Thu Jul 13 22:27:16 2023 +0300
+
+    make few changes
+
+[33mcommit 1b010b7f6485c8ca5abf8ca7ef7600d9c5a947c3[m
+Author: Ronnie <ronald.otiego@gmail.com>
+Date:   Thu Jul 13 22:23:47 2023 +0300
+
+    validate the edit texts
+
+[33mcommit 9e078c129f574b42e84044e27d33c371a878f781[m
+Author: Ronnie <ronald.otiego@gmail.com>
+Date:   Thu Jul 13 16:52:37 2023 +0300
+
+    write logic for next
+
+[33mcommit b0533fb285cdce3c2b636770c2357e8371353e43[m
+Author: Ronnie <ronald.otiego@gmail.com>
+Date:   Thu Jul 13 16:47:19 2023 +0300
+
+    update the ui
+
+[33mcommit ff79090651e2f98ba95491b3387ba3574ec66ef4[m
+Author: Ronnie <ronald.otiego@gmail.com>
+Date:   Thu Jul 13 16:05:48 2023 +0300
+
+    First commit -set up the frontend of the app
