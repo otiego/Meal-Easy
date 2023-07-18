@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -56,4 +57,16 @@ dependencies {
 
     //    Card view
     implementation "androidx.cardview:cardview:1.0.0"
+
+
+    //Room
+    implementation "androidx.room:room-runtime:2.5.2"
+    implementation "androidx.room:room-ktx:2.5.2"
+    annotationProcessor "androidx.room:room-compiler:2.5.2"
+
+    kapt "androidx.room:room-compiler:2.5.2"
+    kapt "androidx.arch.persistance.room:compiler:2.5.2"
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:2.5.2"
 }
