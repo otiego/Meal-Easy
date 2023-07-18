@@ -65,7 +65,6 @@
             android:textColor="@color/black"
             android:layout_below="@id/itemETv1"/>
 
-
         <EditText
             android:id="@+id/itemETv5"
             android:layout_width="wrap_content"
