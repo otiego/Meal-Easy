@@ -1,4 +1,6 @@
 package com.rondroid.mealsimple
 
-class HomeModel {
+import android.content.Context
+
+class HomeModel(val day:String) {
 }
