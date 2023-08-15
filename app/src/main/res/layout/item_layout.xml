@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -12,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <LinearLayout
             android:id="@+id/linearDay"
             android:layout_width="match_parent"
@@ -22,67 +24,72 @@
                 android:id="@+id/itemDayETv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sunday"
+                android:autofillHints=""
                 android:background="@drawable/day_background"
-                android:textSize="25sp"
+                android:text="Sunday"
                 android:textColor="@color/black"
-                android:textStyle="bold"/>
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <EditText
             android:id="@+id/itemETv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Breakfast"
-            android:textSize="25sp"
             android:layout_below="@+id/linearDay"
+            android:text="Breakfast"
             android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/itemETv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:text="Tea/Bread"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:layout_below="@id/itemETv1"/>
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/itemETv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lunch"
-            android:textSize="25sp"
-            android:layout_below="@+id/linearDay"
             android:textColor="@color/black"
+            android:textSize="25sp"
             android:textStyle="bold" />
+
         <EditText
             android:id="@+id/itemETv4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/itemETv1"
+            android:autofillHints=""
+            android:minHeight="48dp"
             android:text="French Fries/Cheicken"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:layout_below="@id/itemETv1"/>
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/itemETv5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dinner"
-            android:textSize="25sp"
             android:layout_below="@+id/linearDay"
+            android:text="Dinner"
             android:textColor="@color/black"
+            android:textSize="25sp"
             android:textStyle="bold" />
+
         <EditText
             android:id="@+id/itemETv6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:text="Fish/Ugali"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:layout_below="@id/itemETv1"/>
+            android:textSize="18sp" />
     </LinearLayout>
-
 
 </androidx.cardview.widget.CardView>

@@ -12,6 +12,7 @@ class AdapterHome (private val arrayDays:ArrayList<HomeModel>, val context: Cont
     class ViewHolderHome(binding: View):RecyclerView.ViewHolder(binding){
         fun bindItems(homeModel: HomeModel){
             itemView.dayTv.text = homeModel.day
+
         }
 
     }
